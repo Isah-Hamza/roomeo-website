@@ -3,8 +3,8 @@ import ResponsiveSlider from './ResponsiveSlider'
 
 const Review = () => {
     return (
-        <div className="">
-            <div className='custom-container !mt-20'>
+        <div className="bg-[#E07C4F05] py-8 md:py-14 mt-10">
+            <div className='custom-container'>
                 <div className="text-center">
                     <p className="text-xs text-primary-red font-medium">Customers' Review</p>
                     <p className='text-lg font-medium mt-2'>See what people are saying about us</p>

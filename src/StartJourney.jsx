@@ -46,12 +46,12 @@ const StartJourney = () => {
                     </div>
                 </div>
             </div>
-            <div className="mt-20 w-[600px] rounded-lg p-5 bg-faint-red mx-auto ">
+            <div className="mt-20 w-[700px] rounded-xl p-3 bg-faint-red mx-auto ">
                 <iframe
                     className='rounded-xl'
                     width="100%"
-                    height="450"
-                    src="https://www.youtube.com/embed/WO0oyqH8-Ec?si=rD39J0EDWYVAhcMr"
+                    height="400"
+                    src="https://www.youtube.com/embed/Ib1iEGJQc5Q?si=y9LVplMaDzlwcm_1"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

@@ -6,6 +6,7 @@ import Invest from './Invest'
 import StartJourney from './StartJourney'
 import Faq from './Faq'
 import Review from './Review'
+import Footer from './Footer'
 
 const Landing = () => {
     return (
@@ -17,6 +18,7 @@ const Landing = () => {
             <StartJourney />
             <Faq />
             <Review />
+            <Footer />
         </div>
     )
 }
