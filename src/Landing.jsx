@@ -4,6 +4,8 @@ import Hero from './Hero'
 import OwnProperty from './OwnProperty'
 import Invest from './Invest'
 import StartJourney from './StartJourney'
+import Faq from './Faq'
+import Review from './Review'
 
 const Landing = () => {
     return (
@@ -13,6 +15,8 @@ const Landing = () => {
             <OwnProperty />
             <Invest />
             <StartJourney />
+            <Faq />
+            <Review />
         </div>
     )
 }
