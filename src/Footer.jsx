@@ -11,7 +11,7 @@ const Footer = () => {
                 <div className="">
                     <img src={logo} alt="" className='w-40' />
                 </div>
-                <div className='flex text-sm gap-16'>
+                <div className='grid grid-cols-3 sm:flex text-sm gap-16'>
                     <div className=''>
                         <p className='font-medium mb-5'>Brands</p>
                         <ul className='flex flex-col gap-1'>
@@ -37,7 +37,7 @@ const Footer = () => {
                             <li>Security</li>
                         </ul>
                     </div>
-                    <div className="text-right">
+                    <div className=" text-center sm:text-right col-span-3 sm:col-span-[unset] ">
                         <div className="flex justify-center sm:justify-end items-center gap-5 mb-3" >
                             <FaFacebook className='text-primary-red' size={20} />
                             <GrTwitter className='text-primary-red' size={20} />
