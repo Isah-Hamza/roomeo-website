@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Header />
-      <AboutUs />
+      <Landing />
       <Review />
       <Footer />
     </>

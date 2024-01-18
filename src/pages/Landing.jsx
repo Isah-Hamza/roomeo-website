@@ -11,14 +11,11 @@ import Footer from '../Footer'
 const Landing = () => {
     return (
         <div>
-            <Header />
             <Hero />
             <OwnProperty />
             <Invest />
             <StartJourney />
             <Faq />
-            <Review />
-            <Footer />
         </div>
     )
 }

@@ -8,5 +8,5 @@
 
 
 .custom-container {
-    @apply max-w-[1300px] px-10 m-auto
+    @apply max-w-[1300px] px-5 sm:px-10 m-auto
 }

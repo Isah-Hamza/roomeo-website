@@ -9,21 +9,21 @@ import spiral from './assets/images/spiral-bind.png';
 
 const Hero = () => {
     return (
-        <div className="mt-14">
-            <div className='custom-container grid grid-cols-2 gap-10'>
+        <div className="pt-16 bg-[#F45E5105]">
+            <div className='custom-container flex flex-col-reverse md:grid grid-cols-2 gap-10'>
                 <div className='pt-26'>
-                    <h3 className='text-6xl font-semibold'>
+                    <h3 className='hidden md:block text-4xl lg:text-6xl font-semibold'>
                         <p> Trusted platform for</p>
                         <div className='my-2 relative'>
-                            <img className='absolute -left-7 top-0' src={spiral} alt="spiral" />
+                            <img className='absolute -left-7 top-0 w-52 lg:w-[unset]' src={spiral} alt="spiral" />
                             <span className='text-primary-red'>fractional</span>  real estate </div>
                         <p>investment</p>
                     </h3>
-                    <p className='my-10 text-lg'>Roomeo helps Africans own fractions of high-income <br /> generating real
-                        estate, manage their portfolio and build <br /> wealth.</p>
-                    <div className="flex items-center gap-5 mt-8">
-                        <img className='!max-h-[100px] max-w-40' src={appstore} alt="appstore" />
-                        <img className='!max-h-[100px] max-w-40' src={playstore} alt="playstore" />
+                    <p className='my-10 lg:text-lg'>Roomeo helps Africans own fractions of high-income <br className='hidden lg:block' /> generating real
+                        estate, manage their portfolio and build <br className='hidden lg:block' /> wealth.</p>
+                    <div className="flex flex-col sm:flex-row items-center gap-5 mt-8">
+                        <img className='!max-h-[100px] max-w-52 sm:max-w-40' src={appstore} alt="appstore" />
+                        <img className='!max-h-[100px] max-w-52 sm:max-w-40' src={playstore} alt="playstore" />
                     </div>
                     <div className="flex items-center gap-5 mt-12">
                         <div className="flex items-center gap-2 bg-faint-red p-3 py-2 pr-4 text-xs font-medium rounded-3xl">
@@ -37,8 +37,16 @@ const Hero = () => {
                     </div>
                 </div>
                 <img src={hero} alt="hero" />
-            </div>
-        </div>
+                <h3 className='text-4xl block md:hidden text-center'>
+                    Trusted platform for
+                    {/* <div className='my-2 relative w-fit'> */}
+                    {/* <img className='absolute -left-7 top-0 w-[125%] max-w-[unset]' src={spiral} alt="spiral" /> */}
+                    {/* </div> */}
+                    <span className='text-primary-red px-2'>fractional</span>
+                    real estate investment
+                </h3>
+            </div >
+        </div >
     )
 }
 

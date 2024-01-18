@@ -9,7 +9,7 @@ import earn from './assets/images/earn.png';
 const OwnProperty = () => {
     return (
         <div className='bg-[#FCF2ED] py-20 mt-32'>
-            <div className="custom-container grid grid-cols-2 gap-10">
+            <div className="custom-container grid lg:grid-cols-2 gap-10">
                 <div className='flex flex-col text-center justify-center items-center'>
                     <h3 className='text-2xl font-bold'>
                         <p>Owning property has <br /> been made easy.
@@ -22,7 +22,7 @@ const OwnProperty = () => {
                 <div className="bg-white rounded-lg p-10 pb-0">
                     <p className='font-bold text-[#2DC874] mb-3'>Buy</p>
                     <p>Buy as many fractions from our  <br />listed properties at affordable  entry <br /> points.</p>
-                    <div className="flex justify-between items-end">
+                    <div className="mt-5 sm:mt-0 flex flex-col sm:flex-row justify-between sm:items-end">
                         <div className="flex items-center mb-16">
                             <img src={green_arrow} alt="arrow" />
                             <p className='font-medium text-[#2DC874]'>Learn More</p>
@@ -32,8 +32,8 @@ const OwnProperty = () => {
                 </div>
                 <div className="bg-white rounded-lg p-10 pb-0">
                     <p className='font-bold text-[#D1328F] mb-3'>Earn</p>
-                    <p>Earn rental income from assets and benefit <br /> from property appreciation based on your<br /> fractional ownership.</p>
-                    <div className="flex justify-between items-end">
+                    <p>Earn rental income from assets and benefit <br className='hidden sm:block' /> from property appreciation based on your<br className='hidden sm:block' /> fractional ownership.</p>
+                    <div className="mt-5 sm:mt-0 flex flex-col sm:flex-row justify-between sm:items-end">
                         <div className="flex items-center mb-16">
                             <img src={pink_arrow} alt="arrow" />
                             <p className='font-medium text-[#D1328F]'>Learn More</p>
@@ -43,8 +43,8 @@ const OwnProperty = () => {
                 </div>
                 <div className="bg-white rounded-lg p-10 pb-0">
                     <p className='font-bold text-dark-black mb-3'>Monitor</p>
-                    <p>Monitor your portfolio with <br /> ease while we handle the day-to-day <br />management.</p>
-                    <div className="flex justify-between items-end">
+                    <p>Monitor your portfolio with <br className='hidden sm:block' /> ease while we handle the day-to-day <br className='hidden sm:block' />management.</p>
+                    <div className="mt-5 sm:mt-0 flex flex-col sm:flex-row justify-between sm:items-end">
                         <div className="flex items-center mb-16">
                             <img src={black_arrow} alt="arrow" />
                             <p className='font-medium text-dark-black'>Learn More</p>
