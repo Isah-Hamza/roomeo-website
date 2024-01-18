@@ -10,3 +10,25 @@
 .custom-container {
     @apply max-w-[1300px] px-5 sm:px-10 m-auto
 }
+
+.active {
+    @apply !font-medium
+}
+
+.open {
+    @media screen and (max-width:1024px) {
+        z-index: 20;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        background-color: rgba(244 94 81 / 0.45);
+        background-color: white;
+    }
+}

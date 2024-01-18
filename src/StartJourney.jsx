@@ -46,7 +46,7 @@ const StartJourney = () => {
                     </div>
                 </div>
             </div>
-            <div className="mt-20 w-[700px] rounded-xl p-3 bg-faint-red mx-auto ">
+            <div className="mt-20 max-w-[700px] rounded-xl p-3 bg-faint-red mx-auto ">
                 <iframe
                     className='rounded-xl'
                     width="100%"

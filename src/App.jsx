@@ -6,14 +6,22 @@ import Header from './Header'
 import Review from './Review'
 import Footer from './Footer'
 
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+
 function App() {
 
   return (
     <>
-      <Header />
-      <Landing />
-      <Review />
-      <Footer />
+      <Router>
+        <Header />
+        <Routes>
+          <Route path='/' Component={Landing} />
+          <Route path='/about' Component={AboutUs} />
+          <Route path='/about-us' Component={AboutUs} />
+        </Routes>
+        <Review />
+        <Footer />
+      </Router>
     </>
   )
 }
