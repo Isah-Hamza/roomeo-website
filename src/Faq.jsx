@@ -31,6 +31,10 @@ const Faq = () => {
             title: 'Lorem ipsum dolor sit amet consectetur In blandit sed',
             desc: 'Lorem ipsum dolor sit amet consecte. Pellentesque cursus facilisis metus mauris faucibus gravida in enim. Id ipsum laoreet integer arcu massa in. Pellentesque et dictum sed egestas enim dui amet aliquet.'
         },
+        {
+            title: 'Lorem ipsum dolor sit amet consectetur In blandit sed',
+            desc: 'Lorem ipsum dolor sit amet consecte. Pellentesque cursus facilisis metus mauris faucibus gravida in enim. Id ipsum laoreet integer arcu massa in. Pellentesque et dictum sed egestas enim dui amet aliquet.'
+        },
     ]
 
     return (

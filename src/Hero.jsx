@@ -1,16 +1,38 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 import appstore from './assets/images/App Store.png'
 import playstore from './assets/images/Play Store.png'
 import easy from './assets/images/easy.png';
 import flexible from './assets/images/flexible.png';
 import hero from './assets/images/hero.png';
+
+import hero1 from './assets/images/hero1.png';
+import hero2 from './assets/images/hero2.png';
+import hero3 from './assets/images/hero3.png';
+
 import spiral from './assets/images/spiral-bind.png';
 
 import design_right from './assets/images/design-right.png';
 import design_left from './assets/images/design-left.png';
 
 const Hero = () => {
+
+    const images = [hero1, hero2, hero3];
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+    useEffect(() => {
+        // Function to change the image after a specified time interval
+        const changeImage = () => {
+            setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+        };
+
+        // Set up a timer to change the image every, for example, 5 seconds
+        const intervalId = setInterval(changeImage, 5000);
+
+        // Clear the interval when the component unmounts
+        return () => clearInterval(intervalId);
+    }, [images.length]);
+
     return (
         <div className="pt-16 bg-[#F45E5105] relative overflow-x-hidden">
             <img className='absolute top-0 right-0 w-96' src={design_right} alt="right" />
@@ -42,7 +64,17 @@ const Hero = () => {
                         </div>
                     </div>
                 </div>
-                <img src={hero} alt="hero" />
+                {/* <img src={images[currentImageIndex]} alt="hero" /> */}
+
+                {images.map((image, index) => (
+                    <img
+                        key={index}
+                        src={image}
+                        alt={`Image ${index + 1}`}
+                        className={index === currentImageIndex ? 'block' : 'hidden'}
+                    />
+                ))}
+
                 <h3 className='font-semibold tracking-wide text-4xl block md:hidden text-center'>
                     Trusted platform for
                     {/* <div className='my-2 relative w-fit'> */}
