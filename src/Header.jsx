@@ -20,7 +20,7 @@ const Header = () => {
                     <li onClick={() => setSideBarOpen(false)} >FAQs</li>
                     <li onClick={() => setSideBarOpen(false)} className='block lg:hidden'>Create Account</li>
                 </ul>
-                <button className='hidden lg:block text-white bg-primary-red px-5 py-2.5 rounded-3xl'>
+                <button className='hidden lg:block text-white bg-primary-red px-5 py-2.5 rounded-xl'>
                     Create Free Account
                 </button>
                 <button onClick={() => setSideBarOpen(!sideBarOpen)} className='block lg:hidden'>

@@ -11,6 +11,12 @@ export default {
         'dark-black': '#434343',
         'light-dark': '#333333',
         'faint-red': '#F45E511F'
+      },
+      fontFamily: {
+        fellix: 'Fellix',
+        fellixMedium: 'FellixMedium',
+        fellixSemibold: 'fellixSemibold',
+        fellixBold: 'fellixBold',
       }
     },
   },
