@@ -17,7 +17,7 @@ const Header = () => {
                 <ul className={`${sideBarOpen ? 'open' : 'left-full'} fixed lg:static flex items-center gap-10 `}>
                     <li onClick={() => setSideBarOpen(false)} className='font-medium'> <NavLink to={'/'} className={({ isActive }) => { isActive ? 'active' : '' }} >Home</NavLink> </li>
                     <li onClick={() => setSideBarOpen(false)} > <NavLink to={'/about'} className={({ isActive }) => { isActive ? 'active' : '' }} >About Us</NavLink> </li>
-                    <li onClick={() => setSideBarOpen(false)} >Real Series</li>
+                    <li onClick={() => setSideBarOpen(false)} >REAL Series</li>
                     <li onClick={() => setSideBarOpen(false)} >Resources</li>
                     <li onClick={() => setSideBarOpen(false)} >FAQs</li>
                     <li onClick={() => setSideBarOpen(false)} className='block lg:hidden'>
