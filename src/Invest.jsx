@@ -8,7 +8,7 @@ const Invest = () => {
         <div className=''>
             <div className="custom-container !py-20">
                 <div className='text-center'>
-                    <p className='text-xl font-semibold mb-3'>Invest in fractions of high income generating <br className='hidden sm:block' /> properties across the world</p>
+                    <p className='text-xl !font-fellixBold mb-3'>Invest in fractions of high income generating <br className='hidden sm:block' /> properties across the world</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet  habitant dui  <br className='hidden sm:block' /> consectetur sed nam amet, magna. Iet se</p>
                     <button className="text-sm font-medium m-auto mt-10 px-5 py-2 rounded-2xl text-primary-red bg-faint-red">See More Properties</button>
                 </div>
@@ -19,12 +19,12 @@ const Invest = () => {
                             <p className='font-semibold'>The Sequence 2</p>
                             <p className='text-primary-red bg-faint-red py-1 px-3 rounded-xl text-xs font-medium'>N350k/fraction</p>
                         </div>
-                        <p>Flat 2B Friends Colony Estate, Lagos, Nigeria. </p>
+                        <p>Plot 10 Cadastral Zone B 11, Kaura District, Abuja, Nigeria </p>
                         <div className="flex items-center mt-3">
-                            <p className='text-xs sm:text-sm'>
-                                <span className='font-medium'>0</span> Investors <span className='px-2'> | </span>
-                                <span className='font-medium'>0</span> Total Purchases <span className='px-2'> | </span>
-                                <span className='font-medium'>10</span> Fractions Left
+                            <p className='text-xs sm:text-[13px]'>
+                                <span className='!font-fellixSemibold'>13</span> Investors <span className='px-1'> | </span>
+                                <span className='!font-fellixSemibold'>400</span> Fractions Purchases <span className='px-1'> | </span>
+                                <span className='!font-fellixSemibold'>600</span> Fractions Left
                             </p>
                         </div>
                     </div>
@@ -32,14 +32,14 @@ const Invest = () => {
                         <img src={property2} alt="property" />
                         <div className="flex items-center justify-between gap-5 mt-3 mb-1">
                             <p className='font-semibold'>Luxe Residence</p>
-                            <p className='text-primary-red bg-faint-red py-1 px-3 rounded-xl text-xs font-medium'>$100k/fraction</p>
+                            <p className='text-primary-red bg-faint-red py-1 px-3 rounded-xl text-xs font-medium'>$500/fraction</p>
                         </div>
-                        <p>110 Gardengate DrHarvest, Alabama, UK. </p>
+                        <p>123 Elm Street, London W1A 1AA, United Kingdom. </p>
                         <div className="flex items-center mt-3">
-                            <p className='text-xs sm:text-sm'>
-                                <span className='font-medium'>18</span> Investors <span className='px-2'> | </span>
-                                <span className='font-medium'>22</span> Total Purchases <span className='px-2'> | </span>
-                                <span className='font-medium'>4</span> Fractions Left
+                            <p className='text-xs sm:text-[13px]'>
+                                <span className='!font-fellixSemibold'>0</span> Investors <span className='px-1'> | </span>
+                                <span className='!font-fellixSemibold'>0</span> Fractions Purchases <span className='px-1'> | </span>
+                                <span className='!font-fellixSemibold'>1000</span> Fractions Left
                             </p>
                         </div>
                     </div>
@@ -49,12 +49,12 @@ const Invest = () => {
                             <p className='font-semibold'>Luxe Residence</p>
                             <p className='text-primary-red bg-faint-red py-1 px-3 rounded-xl text-xs font-medium'>$474k/fraction</p>
                         </div>
-                        <p>Rosharon, TX, Pradera Oaks, texas, US. </p>
+                        <p>R456 Oak Avenue Houston, TX 77001, United States. </p>
                         <div className="flex items-center mt-3">
-                            <p className='text-xs sm:text-sm'>
-                                <span className='font-medium'>22</span> Investors <span className='px-2'> | </span>
-                                <span className='font-medium'>4</span> Total Purchases <span className='px-2'> | </span>
-                                <span className='font-medium'>10</span> Fractions Left
+                            <p className='text-xs sm:text-[13px]'>
+                                <span className='!font-fellixSemibold'>0</span> Investors <span className='px-1'> | </span>
+                                <span className='!font-fellixSemibold'>0</span> Fractions Purchases <span className='px-1'> | </span>
+                                <span className='!font-fellixSemibold'>1000</span> Fractions Left
                             </p>
                         </div>
                     </div>

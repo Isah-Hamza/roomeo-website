@@ -8,12 +8,13 @@ const Footer = () => {
     return (
         <div className='custom-container border-t pt-14 mb-5'>
             <div className="flex flex-col sm:flex-row justify-between items-center sm:items-start gap-10">
-                <div className="">
-                    <img src={logo} alt="" className='w-40' />
+                <div className="mb-5 sm:mb-0">
+                    <img src={logo} alt="" className='w-40 mx-auto sm:mx-[unset]' />
+                    <p className='mt-2 text-sm max-w-72 text-center sm:text-left'>Our mission is to provide trusted access for people seeking to build wealth in real estate</p>
                 </div>
                 <div className='grid grid-cols-3 sm:flex text-sm gap-16'>
                     <div className=''>
-                        <p className='font-medium mb-5'>Brands</p>
+                        <p className='!font-fellixSemibold mb-5'>Brands</p>
                         <ul className='flex flex-col gap-1'>
                             <li>CleanOut</li>
                             <li>Freeze</li>
@@ -21,16 +22,16 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className=''>
-                        <p className='font-medium mb-5'>Company</p>
+                        <p className='!font-fellixSemibold mb-5'>Company</p>
                         <ul className='flex flex-col gap-1'>
-                            <li>Services</li>
                             <li>About Us</li>
                             <li>Blog</li>
+                            <li>Contact Us</li>
                             <li>FAQs</li>
                         </ul>
                     </div>
                     <div className=''>
-                        <p className='font-medium mb-5'>Legal</p>
+                        <p className='!font-fellixSemibold mb-5'>Legal</p>
                         <ul className='flex flex-col gap-1'>
                             <li>Privacy</li>
                             <li>Terms</li>
