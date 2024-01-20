@@ -1,7 +1,8 @@
 import React from 'react'
-import property1 from './assets/images/prop1.png';
-import property2 from './assets/images/prop2.png';
-import property3 from './assets/images/prop3.png';
+import property1 from './assets/images/property11.png';
+import property2 from './assets/images/property22.png';
+import property3 from './assets/images/property33.png';
+import StatusBadge from './StatusBadge';
 
 const Invest = () => {
     return (
@@ -14,7 +15,7 @@ const Invest = () => {
                 </div>
                 <div className="mt-12 md:mt-20 grid md:grid-cols-3 gap-7 md:gap-5">
                     <div className="cursor-pointer grid justify-center md:block rounded-lg bg-white p-3 text-sm">
-                        <img src={property1} alt="property" />
+                        <img src={property1} className='w-full' alt="property" />
                         <div className="flex items-center justify-between gap-5 mt-3 mb-1">
                             <p className='!font-fellixSemibold'>The Sequence 2</p>
                             <p className='text-primary-red bg-faint-red py-1 px-3 rounded-xl text-xs font-medium'>N350k/fraction</p>
@@ -29,7 +30,7 @@ const Invest = () => {
                         </div>
                     </div>
                     <div className="cursor-pointer grid justify-center md:block rounded-lg bg-white p-3 text-sm">
-                        <img src={property2} alt="property" />
+                        <img src={property2} className='w-full' alt="property" />
                         <div className="flex items-center justify-between gap-5 mt-3 mb-1">
                             <p className='!font-fellixSemibold'>Luxe Residence</p>
                             <p className='text-primary-red bg-faint-red py-1 px-3 rounded-xl text-xs font-medium'>$500/fraction</p>
@@ -44,7 +45,7 @@ const Invest = () => {
                         </div>
                     </div>
                     <div className="cursor-pointer grid justify-center md:block rounded-lg bg-white p-3 text-sm">
-                        <img src={property3} alt="property" />
+                        <img src={property3} className='w-full' alt="property" />
                         <div className="flex items-center justify-between gap-5 mt-3 mb-1">
                             <p className='!font-fellixSemibold'>Luxe Residence</p>
                             <p className='text-primary-red bg-faint-red py-1 px-3 rounded-xl text-xs font-medium'>$474k/fraction</p>
