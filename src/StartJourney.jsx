@@ -12,29 +12,29 @@ const StartJourney = () => {
             <div className="custom-container items-center grid md:grid-cols-[1fr,1fr] gap-14">
                 <img className='hidden md:block' src={start_journey} alt="journey" />
                 <div className="">
-                    <p className="text-center md:text-left text-xs text-primary-red font-medium">Start the Journey</p>
-                    <p className='text-center text-dark-black md:text-left text-lg font-medium mt-2'>Get Started with Roomeo <br /> in three steps</p>
+                    <p className="text-center md:text-left text-xs text-primary-red !font-fellixSemibold">Start the Journey</p>
+                    <p className='text-center text-dark-black md:text-left text-lg !font-fellixSemibold mt-2'>Get Started with Roomeo <br /> in three steps</p>
                     <p className='text-center md:text-left mt-2 text-sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet habitant dui consectetur sed nam amet, magna. Iet se</p>
                     <div className='mt-7'>
                         <div className="grid gap-5">
                             <div className="flex">
                                 <img src={number1} alt="" />
                                 <div className='text-sm'>
-                                    <p className='font-medium'>Headline Title</p>
+                                    <p className='!font-fellixSemibold'>Headline Title</p>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet habitant dui consectetur sed nam amet,</p>
                                 </div>
                             </div>
                             <div className="flex">
                                 <img src={number2} alt="" />
                                 <div className='text-sm'>
-                                    <p className='font-medium'>Headline Title</p>
+                                    <p className='!font-fellixSemibold'>Headline Title</p>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet habitant dui consectetur sed nam amet,</p>
                                 </div>
                             </div>
                             <div className="flex">
                                 <img src={number3} alt="" />
                                 <div className='text-sm'>
-                                    <p className='font-medium'>Headline Title</p>
+                                    <p className='!font-fellixSemibold'>Headline Title</p>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet habitant dui consectetur sed nam amet,</p>
                                 </div>
                             </div>

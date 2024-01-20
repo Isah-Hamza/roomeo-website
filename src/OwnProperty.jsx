@@ -11,10 +11,10 @@ const OwnProperty = () => {
         <div className='bg-[#FCF2ED] py-20 mt-32'>
             <div className="custom-container grid lg:grid-cols-2 gap-10">
                 <div className='flex flex-col text-center justify-center items-center'>
-                    <h3 className='text-2xl font-bold'>
-                        <p>Owning property has <br /> been made easy.
+                    <h3 className='text-2xl !font-fellixBold'>
+                          <p className='!font-fellixBold'>Owning property has <br />been made easy.
                         </p>
-                        <p>Buy. Earn. Monitor</p>
+                            <p className='!font-fellixBold '>Buy. Earn. Monitor</p>
                     </h3>
                     <p className='mt-5 max-w-96'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet habitant
                         dui consectetur sed nam amet, magna. Iet se</p>
