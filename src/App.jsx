@@ -7,20 +7,19 @@ import Review from './Review'
 import Footer from './Footer'
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import CreateAccount from './pages/CreateAccount'
 
 function App() {
 
   return (
     <>
       <Router>
-        <Header />
         <Routes>
           <Route path='/' Component={Landing} />
           <Route path='/about' Component={AboutUs} />
           <Route path='/about-us' Component={AboutUs} />
+          <Route path='/create-account' Component={CreateAccount} />
         </Routes>
-        <Review />
-        <Footer />
       </Router>
     </>
   )

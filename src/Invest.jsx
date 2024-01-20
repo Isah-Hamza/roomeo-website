@@ -16,7 +16,7 @@ const Invest = () => {
                     <div className="cursor-pointer grid justify-center md:block rounded-lg bg-white p-3 text-sm">
                         <img src={property1} alt="property" />
                         <div className="flex items-center justify-between gap-5 mt-3 mb-1">
-                            <p className='font-semibold'>The Sequence 2</p>
+                            <p className='!font-fellixSemibold'>The Sequence 2</p>
                             <p className='text-primary-red bg-faint-red py-1 px-3 rounded-xl text-xs font-medium'>N350k/fraction</p>
                         </div>
                         <p>Plot 10 Cadastral Zone B 11, Kaura District, Abuja, Nigeria </p>
@@ -31,7 +31,7 @@ const Invest = () => {
                     <div className="cursor-pointer grid justify-center md:block rounded-lg bg-white p-3 text-sm">
                         <img src={property2} alt="property" />
                         <div className="flex items-center justify-between gap-5 mt-3 mb-1">
-                            <p className='font-semibold'>Luxe Residence</p>
+                            <p className='!font-fellixSemibold'>Luxe Residence</p>
                             <p className='text-primary-red bg-faint-red py-1 px-3 rounded-xl text-xs font-medium'>$500/fraction</p>
                         </div>
                         <p>123 Elm Street, London W1A 1AA, United Kingdom. </p>
@@ -46,7 +46,7 @@ const Invest = () => {
                     <div className="cursor-pointer grid justify-center md:block rounded-lg bg-white p-3 text-sm">
                         <img src={property3} alt="property" />
                         <div className="flex items-center justify-between gap-5 mt-3 mb-1">
-                            <p className='font-semibold'>Luxe Residence</p>
+                            <p className='!font-fellixSemibold'>Luxe Residence</p>
                             <p className='text-primary-red bg-faint-red py-1 px-3 rounded-xl text-xs font-medium'>$474k/fraction</p>
                         </div>
                         <p>R456 Oak Avenue Houston, TX 77001, United States. </p>

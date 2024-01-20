@@ -12,7 +12,7 @@ const Footer = () => {
                     <img src={logo} alt="" className='w-40 mx-auto sm:mx-[unset]' />
                     <p className='mt-2 text-sm max-w-72 text-center sm:text-left'>Our mission is to provide trusted access for people seeking to build wealth in real estate</p>
                 </div>
-                <div className='grid grid-cols-3 sm:flex text-sm gap-16'>
+                <div className='grid grid-cols-3 sm:flex text-sm gap-16 lg:gap-20'>
                     <div className=''>
                         <p className='!font-fellixSemibold mb-5'>Brands</p>
                         <ul className='flex flex-col gap-1'>
@@ -38,17 +38,17 @@ const Footer = () => {
                             <li>Security</li>
                         </ul>
                     </div>
-                    <div className=" text-center sm:text-right col-span-3 sm:col-span-[unset] ">
-                        <div className="flex justify-center sm:justify-end items-center gap-5 mb-3" >
-                            <FaFacebook className='text-primary-red' size={20} />
-                            <GrTwitter className='text-primary-red' size={20} />
-                            <FaSquareInstagram className='text-primary-red' size={20} />
-                        </div>
-                        <p>41 Voyage CloseKaura District <br />
-                            Abuja Nigeria.</p>
-                        <p className='my-2'>contact@roomeo.ng</p>
-                        <p>+234 (909) 060 6099</p>
+                </div>
+                <div className=" text-center sm:text-right col-span-3 sm:col-span-[unset] ">
+                    <div className="flex justify-center sm:justify-end items-center gap-5 mb-3" >
+                        <FaFacebook className='text-primary-red' size={20} />
+                        <GrTwitter className='text-primary-red' size={20} />
+                        <FaSquareInstagram className='text-primary-red' size={20} />
                     </div>
+                    <p>41 Voyage CloseKaura District <br />
+                        Abuja Nigeria.</p>
+                    <p className='my-2'>contact@roomeo.ng</p>
+                    <p>+234 (909) 060 6099</p>
                 </div>
             </div>
             <p className="text-center mt-16 text-sm">Copyright © 2024 Roomeo</p>
