@@ -6,12 +6,15 @@ import design_left from '../assets/images/design-left.png';
 import dynamite from '../assets/images/dynamite.png';
 import female from '../assets/images/Female.png';
 import real_estate from '../assets/images/real-estate.png';
+import { Link } from 'react-router-dom';
 
 const CreateAccount = () => {
     return (
         <div className='w-full flex h-screen justify-center  overflow-hidden'>
             <div className="w-[450px] p-5 sm:p-10 pb-3 flex flex-col">
-                <img className='w-32' src={logo} alt="logo" />
+                <Link to={'/'}>
+                    <img className='w-32' src={logo} alt="logo" />
+                </Link>
                 <div className="flex items-center gap-2 mt-8">
                     <p className='text-lg text=[#041549]'>Create Your Account</p>
                     <img src={growth} alt="" className='w-5' />
