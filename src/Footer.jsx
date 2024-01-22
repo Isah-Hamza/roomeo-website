@@ -25,6 +25,7 @@ const Footer = () => {
                         <p className='!font-fellixSemibold mb-5'>Company</p>
                         <ul className='flex flex-col gap-1'>
                             <li>About Us</li>
+                            <li>Projects</li>
                             <li>Blog</li>
                             <li>Contact Us</li>
                             <li>FAQs</li>
@@ -45,7 +46,7 @@ const Footer = () => {
                         <GrTwitter className='text-primary-red' size={20} />
                         <FaSquareInstagram className='text-primary-red' size={20} />
                     </div>
-                    <p>41 Voyage CloseKaura District <br />
+                    <p>41 Voyage Close Kaura District <br />
                         Abuja Nigeria.</p>
                     <p className='my-2'>contact@roomeo.ng</p>
                     <p>+234 (909) 060 6099</p>
