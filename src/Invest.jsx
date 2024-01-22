@@ -4,6 +4,7 @@ import property2 from './assets/images/property22.png';
 import property3 from './assets/images/property33.png';
 import StatusBadge from './StatusBadge';
 import sequence2 from './assets/images/sequence2.jpeg';
+import { FaArrowRight } from 'react-icons/fa';
 
 
 const Invest = () => {
@@ -36,6 +37,7 @@ const Invest = () => {
                                     <span className='!font-fellixSemibold'>600</span> Fractions Left
                                 </p>
                             </div>
+                            <p className="!font-fellixBold mt-5 flex items-center gap-1 justify-center uppercase">Pay Now <span><FaArrowRight /></span> </p>
                         </a>
                     </div>
                     <div className="group cursor-pointer grid justify-center md:block rounded-lg bg-white p-3 text-sm">
@@ -61,10 +63,10 @@ const Invest = () => {
                             <img src={property3} className='w-full group-hover:scale-110 transition-all duration-300 ease-in-out' alt="property" />
                         </div>
                         <div className="flex items-center justify-between gap-5 mt-3 mb-1">
-                            <p className='!font-fellixSemibold'>Luxe Residence</p>
-                            <p className='text-primary-red bg-faint-red py-1 px-3 rounded-xl text-xs font-medium'>£400/fraction</p>
+                            <p className='!font-fellixSemibold'>Oak Residence</p>
+                            <p className='text-primary-red bg-faint-red py-1 px-3 rounded-xl text-xs font-medium'>$400/fraction</p>
                         </div>
-                        <p>R456 Oak Residence Houston, TX 77001, United States. </p>
+                        <p>R456 Oak Avenue Houston, TX 77001, United States. </p>
                         <div className="flex items-center mt-3">
                             <p className='text-xs sm:text-[13px]'>
                                 <span className='!font-fellixSemibold'>0</span> Investors <span className='px-1'> | </span>
