@@ -48,7 +48,7 @@ const Faq = () => {
     ]
 
     return (
-        <div className='custom-container !mt-24'>
+        <div className='custom-container !pt-24' id='faq'>
             <div className="grid gap-6 lg:gap-14 lg:grid-cols-2">
                 <div className="flex lg:block flex-col items-center">
                     <p className="text-xs text-primary-red !font-fellixSemibold">FAQs</p>
