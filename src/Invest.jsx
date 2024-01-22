@@ -26,7 +26,7 @@ const Invest = () => {
                             </div>
                             <div className="flex items-center justify-between gap-5 mt-3 mb-1">
                                 <p className='!font-fellixSemibold'>The Sequence 2</p>
-                                <p className='text-primary-red bg-faint-red py-1 px-3 rounded-xl text-xs font-medium'>N350k/fraction</p>
+                                <p className='text-primary-red bg-faint-red py-1 px-3 rounded-xl text-xs font-medium'>₦85k/fraction</p>
                             </div>
                             <p>Plot 10 Cadastral Zone B 11, Kaura District, Abuja, Nigeria </p>
                             <div className="flex items-center mt-3">
@@ -45,7 +45,7 @@ const Invest = () => {
                         </div>
                         <div className="flex items-center justify-between gap-5 mt-3 mb-1">
                             <p className='!font-fellixSemibold'>Luxe Residence</p>
-                            <p className='text-primary-red bg-faint-red py-1 px-3 rounded-xl text-xs font-medium'>£500/fraction</p>
+                            <p className='text-primary-red bg-faint-red py-1 px-3 rounded-xl text-xs font-medium'>£400/fraction</p>
                         </div>
                         <p>123 Elm Street, London W1A 1AA, United Kingdom. </p>
                         <div className="flex items-center mt-3">
@@ -62,7 +62,7 @@ const Invest = () => {
                         </div>
                         <div className="flex items-center justify-between gap-5 mt-3 mb-1">
                             <p className='!font-fellixSemibold'>Luxe Residence</p>
-                            <p className='text-primary-red bg-faint-red py-1 px-3 rounded-xl text-xs font-medium'>£400k/fraction</p>
+                            <p className='text-primary-red bg-faint-red py-1 px-3 rounded-xl text-xs font-medium'>£400/fraction</p>
                         </div>
                         <p>R456 Oak Residence Houston, TX 77001, United States. </p>
                         <div className="flex items-center mt-3">
