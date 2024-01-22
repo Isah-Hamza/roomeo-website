@@ -16,8 +16,8 @@ const OwnProperty = () => {
                         </p>
                             <p className='!font-fellixBold '>Buy. Earn. Monitor</p>
                     </h3>
-                    <p className='mt-5 max-w-96'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet habitant
-                        dui consectetur sed nam amet, magna. Iet se</p>
+                    {/* <p className='mt-5 max-w-96'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet habitant
+                        dui consectetur sed nam amet, magna. Iet se</p> */}
                 </div>
                 <div className="bg-white rounded-lg p-10 pb-0">
                     <p className='font-bold text-[#2DC874] mb-3'>Buy</p>

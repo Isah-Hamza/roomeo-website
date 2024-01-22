@@ -9,8 +9,8 @@ const Invest = () => {
         <div className=''>
             <div className="custom-container !py-20">
                 <div className='text-center'>
-                    <p className='text-xl !font-fellixBold mb-3'>Invest in fractions of high income generating <br className='hidden sm:block' /> properties across the world</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet  habitant dui  <br className='hidden sm:block' /> consectetur sed nam amet, magna. Iet se</p>
+                    <p className='text-xl !font-fellixBold mb-3'>Invest in Fractions.</p>
+                    <p>You are one step away from owning high income generating  <br className='hidden sm:block' /> properties across the world.</p>
                     <button className="text-sm font-medium m-auto mt-10 px-5 py-2 rounded-2xl text-primary-red bg-faint-red">See More Properties</button>
                 </div>
                 <div className="mt-12 md:mt-20 grid md:grid-cols-3 gap-7 md:gap-5">
@@ -33,7 +33,7 @@ const Invest = () => {
                         <img src={property2} className='w-full' alt="property" />
                         <div className="flex items-center justify-between gap-5 mt-3 mb-1">
                             <p className='!font-fellixSemibold'>Luxe Residence</p>
-                            <p className='text-primary-red bg-faint-red py-1 px-3 rounded-xl text-xs font-medium'>$500/fraction</p>
+                            <p className='text-primary-red bg-faint-red py-1 px-3 rounded-xl text-xs font-medium'>£500/fraction</p>
                         </div>
                         <p>123 Elm Street, London W1A 1AA, United Kingdom. </p>
                         <div className="flex items-center mt-3">
@@ -48,9 +48,9 @@ const Invest = () => {
                         <img src={property3} className='w-full' alt="property" />
                         <div className="flex items-center justify-between gap-5 mt-3 mb-1">
                             <p className='!font-fellixSemibold'>Luxe Residence</p>
-                            <p className='text-primary-red bg-faint-red py-1 px-3 rounded-xl text-xs font-medium'>$474k/fraction</p>
+                            <p className='text-primary-red bg-faint-red py-1 px-3 rounded-xl text-xs font-medium'>£400k/fraction</p>
                         </div>
-                        <p>R456 Oak Avenue Houston, TX 77001, United States. </p>
+                        <p>R456 Oak Residence Houston, TX 77001, United States. </p>
                         <div className="flex items-center mt-3">
                             <p className='text-xs sm:text-[13px]'>
                                 <span className='!font-fellixSemibold'>0</span> Investors <span className='px-1'> | </span>

@@ -55,10 +55,10 @@ const Hero = () => {
                     <p className='my-7 lg:my-10 lg:text-lg text-center sm:text-left'>Roomeo helps Africans own fractions of high-income <br className='hidden lg:block' /> generating real
                         estate, manage their portfolio and build <br className='hidden lg:block' /> wealth.</p>
                     <div className="flex flex-col sm:flex-row items-center gap-5 mt-8">
-                        <Link to={'#waitlist'}>
+                        <Link to={'/create-account'}>
                             <img className='!max-h-[100px] max-w-52 sm:max-w-40' src={appstore} alt="appstore" />
                         </Link>
-                        <Link to={'#waitlist'}>
+                        <Link to={'/create-account'}>
                             <img className='!max-h-[100px] max-w-52 sm:max-w-40' src={playstore} alt="playstore" />
                         </Link>
                     </div>
