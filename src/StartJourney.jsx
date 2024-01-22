@@ -5,6 +5,7 @@ import number2 from './assets/images/number2.png'
 import number3 from './assets/images/number3.png'
 import appstore from './assets/images/App Store.png'
 import playstore from './assets/images/Play Store.png'
+import { Link } from 'react-router-dom'
 
 const StartJourney = () => {
     return (
@@ -40,8 +41,12 @@ const StartJourney = () => {
                         </div>
                     </div>
                     <div className="flex items-center gap-5 mt-8 max-w-[200px]">
-                        <img className='!max-h-[100px] max-w-40' src={appstore} alt="appstore" />
-                        <img className='!max-h-[100px] max-w-40' src={playstore} alt="playstore" />
+                        <Link to={'/create-account'}>
+                            <img className='!max-h-[100px] max-w-40' src={appstore} alt="appstore" />
+                        </Link>
+                        <Link to={'/create-account'}>
+                            <img className='!max-h-[100px] max-w-40' src={playstore} alt="playstore" />
+                        </Link>
                     </div>
                 </div>
             </div>
