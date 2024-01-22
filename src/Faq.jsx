@@ -52,8 +52,7 @@ const Faq = () => {
             <div className="grid gap-6 lg:gap-14 lg:grid-cols-2">
                 <div className="flex lg:block flex-col items-center">
                     <p className="text-xs text-primary-red !font-fellixSemibold">FAQs</p>
-                    <p className='text-xl !font-fellixSemibold mt-2'>We are always here for our <br className='hidden lg:block' />customers</p>
-                    <p className='mt-2 text-sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet habitant dui consectetur sed nam amet, magna. Iet se</p>
+                    <p className='text-xl !font-fellixSemibold mt-2'>We are always here for our <br className='hidden lg:block' />subscribers</p>
                     <img className='mt-10' src={faq} alt="faq" />
                 </div>
                 <div className="">

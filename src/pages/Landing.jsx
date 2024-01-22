@@ -18,7 +18,7 @@ const Landing = () => {
             <Invest />
             <StartJourney />
             <Faq />
-            <Waitlist />
+            {/* <Waitlist /> */}
             <Review />
             <Footer />
         </div>

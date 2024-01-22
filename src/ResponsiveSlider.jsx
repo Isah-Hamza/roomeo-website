@@ -86,7 +86,7 @@ const ResponsiveSlider = () => {
   ];
 
   return (
-    <div className="mt-24">
+    <div className="mt-16">
       <Slider ref={sliderRef} {...settings}>
         {reviews.map((item, idx) => (
           <div
@@ -95,7 +95,7 @@ const ResponsiveSlider = () => {
             className={` ${idx !== 0 && "hidden md:block"
               } py-5rounded-lg `}
           >
-            <p className="text-right text-xs mb-2">{item.date}</p>
+            {/* <p className="text-right text-xs mb-2">{item.date}</p> */}
             <p className="text-sm">{item.review}</p>
             <div className=" flex gap-2 mt-3 items-center">
               <img

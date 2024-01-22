@@ -8,7 +8,7 @@ const Review = () => {
                 <div className="text-center">
                     <p className="text-xs text-primary-red !font-fellixSemibold">Customers' Review</p>
                     <p className='text-lg !font-fellixSemibold mt-2'>See what people are saying about us</p>
-                    <p className='mt-2 text-sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet <br className='hidden md:block' />habitant dui consectetur sed nam amet, magna. Iet se</p>
+                    {/* <p className='mt-2 text-sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet <br className='hidden md:block' />habitant dui consectetur sed nam amet, magna. Iet se</p> */}
                 </div>
                 <ResponsiveSlider />
             </div>
