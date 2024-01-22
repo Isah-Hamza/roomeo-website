@@ -3,8 +3,8 @@ import waitlist from './assets/images/wailist.png';
 
 const Waitlist = () => {
     return (
-        <div>
-            <div className="max-w-[1100px] mx-auto !mt-28 mb-20 px-5 sm:px-10 grid md:grid-cols-2 gap-20 items-center">
+        <div id='waitlist'>
+            <div className="max-w-[1100px] mx-auto !pt-28 mb-20 px-5 sm:px-10 grid md:grid-cols-2 gap-20 items-center">
                 <img src={waitlist} alt="waitlist" className='hidden md:block' />
                 <div className="">
                     <div className="text-center sm:text-left">

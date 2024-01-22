@@ -20,7 +20,7 @@ const OurPeople = () => {
                 </div>
                 <div className="mt-10 justify-center grid grid-cols-2 sm:flex-wrap sm:flex gap-5">
                     {
-                        teams.map((item) => <img className='h-full' src={item} alt="team member" />)
+                        teams.map((item,idx) => <img key={idx} className={`cursor-pointer h-full transition-all duration-300 ease-in-out ${idx !== 0 && 'hover:scale-x-125 hover:scale-y-105' }`} src={item} alt="team member" />)
                     }
 
                 </div>

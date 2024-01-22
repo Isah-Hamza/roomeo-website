@@ -17,6 +17,8 @@ import design_left from './assets/images/design-left.png';
 
 import new_hero from './assets/images/new-hero.png';
 
+import { HashLink as Link } from 'react-router-hash-link';
+
 const Hero = () => {
 
     const images = [hero1, hero2, hero3];
@@ -53,8 +55,12 @@ const Hero = () => {
                     <p className='my-7 lg:my-10 lg:text-lg text-center sm:text-left'>Roomeo helps Africans own fractions of high-income <br className='hidden lg:block' /> generating real
                         estate, manage their portfolio and build <br className='hidden lg:block' /> wealth.</p>
                     <div className="flex flex-col sm:flex-row items-center gap-5 mt-8">
-                        <img className='!max-h-[100px] max-w-52 sm:max-w-40' src={appstore} alt="appstore" />
-                        <img className='!max-h-[100px] max-w-52 sm:max-w-40' src={playstore} alt="playstore" />
+                        <Link to={'#waitlist'}>
+                            <img className='!max-h-[100px] max-w-52 sm:max-w-40' src={appstore} alt="appstore" />
+                        </Link>
+                        <Link to={'#waitlist'}>
+                            <img className='!max-h-[100px] max-w-52 sm:max-w-40' src={playstore} alt="playstore" />
+                        </Link>
                     </div>
                     <div className="flex items-center gap-5 mt-12">
                         <div className="flex items-center gap-2 bg-faint-red p-3 py-2 pr-4 text-xs font-medium rounded-3xl">
