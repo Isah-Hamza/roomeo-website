@@ -18,7 +18,7 @@ const Header = () => {
                 <ul className={`${sideBarOpen ? 'open' : 'left-full'} fixed lg:static flex items-center gap-10 `}>
                     <li onClick={() => setSideBarOpen(false)} className='!font-fellixBold'> <NavLink to={'/'} className={'!font-fellixSemibold'} >Home</NavLink> </li>
                     <li onClick={() => setSideBarOpen(false)} > <NavLink to={'/about'} className={({ isActive }) => { isActive ? 'active' : '' }} >About Us</NavLink> </li>
-                    <li onClick={() => setSideBarOpen(false)} > Projects </li>
+                    <li onClick={() => setSideBarOpen(false)} > <Link to={'/projects'}>Projects</Link>  </li>
                     <li onClick={() => setSideBarOpen(false)} > <a href="http://realseries.ng"> REAL Series</a></li>
                     <li onClick={() => setSideBarOpen(false)} > <Link to={'#faq'}>FAQs</Link> </li>
                     <li onClick={() => setSideBarOpen(false)} className='block lg:hidden' > <a href="https://paystack.com/pay/fractional"> Invest</a></li>

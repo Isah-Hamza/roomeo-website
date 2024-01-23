@@ -8,6 +8,7 @@ import Footer from './Footer'
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import CreateAccount from './pages/CreateAccount'
+import Projects from './pages/Projects'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
           <Route path='/about' Component={AboutUs} />
           <Route path='/about-us' Component={AboutUs} />
           <Route path='/create-account' Component={CreateAccount} />
+          <Route path='/projects' Component={Projects} />
         </Routes>
       </Router>
     </>

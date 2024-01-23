@@ -51,42 +51,35 @@ const ResponsiveSlider = () => {
     {
       date: 'Monday 16th of January 2024 by 01:20 AM',
       img: person,
-      name: "DR. CELESTINE EMEKA",
-      review: "Roomeo Apartments have quietly become a standout in Abuja's housing scene, consistently surpassing expectations in tenancy and housing agreements across Nigeria.",
+      name: "Alexandra",
+      review: "I was skeptical at first, but Roomeo's fractional investment platform proved to be a game-changer. It allowed me to diversify my real estate portfolio without breaking the bank. The user-friendly interface and transparent process made me feel confident about my investments. Looking forward to seeing my wealth grow!",
 
     },
     {
       date: 'Monday 16th of January 2024 by 01:20 AM',
       img: person,
-      name: "Leke Ogunride",
-      review: 'Roomeo truly cares about their clients. They made the process of buying a home stress-free and enjoyable.',
+      name: "James",
+      review: "As someone new to investing, Roomeo's fractional investment option was a perfect entry point for me. The low initial investment allowed me to dip my toes into real estate without a substantial commitment. The regular updates and clear communication from Roomeo's team kept me informed and reassured about my investment decisions.",
 
     },
     {
       date: 'Monday 16th of January 2024 by 01:20 AM',
       img: person,
-      name: "TOBECHUKWU",
+      name: "Linda",
+      review: "Fractional investment with Roomeo has been a stress-free experience. I appreciate the flexibility it offers, allowing me to invest in premium properties without the burden of full ownership. The seamless process, coupled with Roomeo's commitment to customer satisfaction, has exceeded my expectations. Highly recommend!",
+
+    },
+    {
+      date: 'Monday 16th of January 2024 by 01:20 AM',
+      img: person,
+      name: "Tobechukwu",
       review: "In my transaction with Roomeo, the communication was excellent, and the team's professionalism truly stood out.",
 
     },
     {
       date: 'Monday 16th of January 2024 by 01:20 AM',
       img: person,
-      name: "IDOREYIN NWAFOR",
-      review: "Your services at Roomeo are excellent and your staff are well coordinated. Your team of cleaners are also doing a great job!"
-
-    },
-    {
-      date: 'Monday 16th of January 2024 by 01:20 AM',
-      img: person,
-      name: "MR. JAIYE GABRIEL",
-      review: "I invested in the sequence 1 project by Roomeo and I can say that the project was intense, thorough and excellently delivered! Roomeo is a company of integrity and I would recommend for anyone looking to invest in Real estate.",
-
-    },
-    {
-      date: 'Monday 16th of January 2024 by 01:20 AM',
-      img: person,
-      name: "DR. CELESTINE EMEKA",
+      name: "Celestine",
       review: "What sets Roomeo apart is their proactive approach; they go above and beyond in ensuring client satisfaction.",
 
     },
