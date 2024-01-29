@@ -52,7 +52,7 @@ const OurPeople = () => {
     const [active, setActive] = useState(0);
     return (
         <div>
-            <div className='custom-container !max-w-[1550px] !mt-28 mb-12'>
+            <div className='custom-container !max-w-[1450px] !mt-28 mb-12'>
                 <div className="text-center">
                     <p className="text-xs text-primary-red font-medium">Our People</p>
                     <p className='text-lg font-medium mt-2'>
@@ -62,8 +62,8 @@ const OurPeople = () => {
                 <div className="mt-10 justify-center grid grid-cols-2 sm:flex-wrap sm:flex gap-5">
                     {
                         teamss.map((item, idx) =>
-                            <div className={`bg-red-500 rounded-lg relative cursor-pointer !h-[350px] transition-all duration-500 ease-in-out 
-                            ${idx == active ? 'w-[300px]' : 'w-[200px]'}`}>
+                            <div className={`bg-red-500 rounded-lg relative cursor-pointer !h-[300px] transition-all duration-500 ease-in-out 
+                            ${idx == active ? 'w-[250px]' : 'w-[170px]'}`}>
                                 <img key={idx}
                                     onMouseOver={() => setActive(idx)}
                                     onMouseLeave={() => setActive(0)}
