@@ -14,6 +14,7 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
 import { ImSpinner2 } from 'react-icons/im'
+import { toast } from 'react-toastify';
 
 export const ValidationError = ({ text }) => {
     return <span className='text-xs text-red-500 mt-1'>{text}</span>
@@ -26,16 +27,21 @@ const CreateAccount = () => {
     const endpoint = 'https://api.roomeo.ng/register_user';
 
     const handleSubmitForm = (values) => {
-        console.log(values)
         setLoading(true);
-        axios.post(endpoint, values, {
+        const data = { ...values };
+        data.phone = '+234' + values.phone;
+
+        axios.post(endpoint, data, {
             headers: {
                 Accept: "application/json",
                 "Content-Type": "application/json",
             }
         }).then(res => {
-            console.log(res)
-        }).catch(e => console.log(e))
+            setShowModal(true);
+        }).catch(e => {
+            toast.error(e.response.data.message)
+            console.log(e)
+        })
             .finally(() => setLoading(false))
     }
 
@@ -50,9 +56,14 @@ const CreateAccount = () => {
         validationSchema: Yup.object().shape({
             first_name: Yup.string().required('Required'),
             last_name: Yup.string().required('Required'),
-            phone: Yup.string().required('Required'),
+            phone: Yup.string().required('Required').length(10, 'should be 10 characters without the leading 0'),
             email: Yup.string().required('Required').email('Invalid email address'),
-            password: Yup.string().required('This is a required field'),
+            password: Yup.string()
+                .required('Password is required')
+                .matches(
+                    /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+])[A-Za-z\d!@#$%^&*()_+]{8,}$/,
+                    'Password must contain at least one capital letter, one small letter, one number, and one special character'
+                ),
         }),
         onSubmit: values => handleSubmitForm(values)
     })
@@ -111,9 +122,12 @@ const CreateAccount = () => {
                     <div className="">
                         <div className="col-span-2 group border rounded-lg p-2 grid overflow-x-hidden">
                             <label className='w-full !font-fellixSemibold' htmlFor="phone">Phone Number</label>
-                            <input id='phone' type="phone" className='mt-1 text-gray-500 active:group:border-primary outline-none border-none'
-                                {...getFieldProps('phone')}
-                            />
+                            <div className="flex items-center gap-1 mt-1 text-gray-500">
+                                <span className='!font-fellixSemibold'>+234</span>
+                                <input id='phone' type="text" className=' active:group:border-primary outline-none border-none'
+                                    {...getFieldProps('phone')}
+                                />
+                            </div>
                         </div>
                         {
                             touched.phone && errors.phone && <ValidationError text={errors.phone} />
@@ -161,13 +175,18 @@ const CreateAccount = () => {
             {showModal ? <div className="inset-0 fixed bg-black/50 z-30 grid place-content-center">
                 <div className="bg-white p-5 rounded-xl w-full h-screen sm:h-[unset] sm:w-[500px] grid sm:block place-content-center">
                     <div className=" bg-faint-red grid place-content-center py-14 relative rounded-xl">
-                        <button onClick={() => setShowModal(false)} className="absolute top-5 right-5 bg-primary-red/80 rounded-full w-7 h-7 grid place-content-center">
+                        <button onClick={() => {
+                            setShowModal(false)
+                            formik.resetForm()
+                        }
+
+                        } className="absolute top-5 right-5 bg-primary-red/80 rounded-full w-7 h-7 grid place-content-center">
                             <GrClose size={12} className='text-white' />
                         </button>
 
                         <img className='m-auto' src={firework} alt="firework" />
                         <p className='text-center text-primary-red mt-5 !font-fellixSemibold'>
-                            Grate Jamiu! you have successfully <br /> created an account
+                            Grate {formik.values.first_name}! you have successfully <br /> created an account.
                         </p>
                     </div>
                     <p className="mt-3 mb-2 text-center">

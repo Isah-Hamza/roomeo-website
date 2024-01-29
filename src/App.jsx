@@ -6,6 +6,10 @@ import Header from './Header'
 import Review from './Review'
 import Footer from './Footer'
 
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import CreateAccount from './pages/CreateAccount'
 import Projects from './pages/Projects'
@@ -14,6 +18,13 @@ function App() {
 
   return (
     <>
+      <ToastContainer
+        theme="colored"
+        hideProgressBar
+        pauseOnHover
+        draggable
+        position="top-center"
+      />
       <Router>
         <Routes>
           <Route path='/' Component={Landing} />
