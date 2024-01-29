@@ -186,11 +186,11 @@ const CreateAccount = () => {
 
                         <img className='m-auto' src={firework} alt="firework" />
                         <p className='text-center text-primary-red mt-5 !font-fellixSemibold'>
-                            Grate {formik.values.first_name}! you have successfully <br /> created an account.
+                            Great {formik.values.first_name}! you have successfully <br /> created an account.
                         </p>
                     </div>
                     <p className="mt-3 mb-2 text-center">
-                        It is time to start building wealth through fractional, our team  <br className='hidden sm:block' />will reach out to through mail soon
+                        It is time to start building wealth through fractional, expect   <br className='hidden sm:block' /> an email from us soon.
                     </p>
                 </div>
             </div> : null}
