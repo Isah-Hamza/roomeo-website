@@ -10,9 +10,55 @@ import { Link } from 'react-router-dom';
 import firework from '../assets/images/firework.png';
 import { MdCancel, MdOutlineCancel } from 'react-icons/md';
 import { GrClose } from 'react-icons/gr';
+import { useFormik } from 'formik';
+import * as Yup from 'yup';
+import axios from 'axios';
+import { ImSpinner2 } from 'react-icons/im'
+
+export const ValidationError = ({ text }) => {
+    return <span className='text-xs text-red-500 mt-1'>{text}</span>
+}
 
 const CreateAccount = () => {
     const [showModal, setShowModal] = useState(false)
+    const [loading, setLoading] = useState(false);
+
+    const endpoint = 'https://api.roomeo.ng/register_user';
+
+    const handleSubmitForm = (values) => {
+        console.log(values)
+        setLoading(true);
+        axios.post(endpoint, values, {
+            headers: {
+                Accept: "application/json",
+                "Content-Type": "application/json",
+            }
+        }).then(res => {
+            console.log(res)
+        }).catch(e => console.log(e))
+            .finally(() => setLoading(false))
+    }
+
+    const formik = useFormik({
+        initialValues: {
+            first_name: '',
+            last_name: '',
+            email: '',
+            password: '',
+            phone: '',
+        },
+        validationSchema: Yup.object().shape({
+            first_name: Yup.string().required('Required'),
+            last_name: Yup.string().required('Required'),
+            phone: Yup.string().required('Required'),
+            email: Yup.string().required('Required').email('Invalid email address'),
+            password: Yup.string().required('This is a required field'),
+        }),
+        onSubmit: values => handleSubmitForm(values)
+    })
+
+    const { handleSubmit, getFieldProps, touched, errors } = formik
+
     return (
         <div className='w-full flex h-screen justify-center  overflow-hidden'>
             <div className="w-[450px] p-5 sm:p-10 pb-3 flex flex-col">
@@ -26,31 +72,74 @@ const CreateAccount = () => {
                 <p className="mt-3 text-sm">
                     We need a few personal details to set an account.
                 </p>
-                <div className="text-sm grid grid-cols-2 gap-5 mt-10">
-                    <div className="group border rounded-lg p-2 grid overflow-x-hidden">
-                        <label className='w-full' htmlFor="first_name">First Name</label>
-                        <input id='first_name' type="text" className='mt-1 text-gray-600 active:group:border-primary outline-none border-none' />
+                <form onSubmit={handleSubmit} className="text-sm grid grid-cols-2 gap-5 mt-10">
+                    <div className="">
+
+                        <div className="group border rounded-lg p-2 grid overflow-x-hidden">
+                            <label className='w-full !font-fellixSemibold' htmlFor="first_name">First Name</label>
+                            <input id='first_name' type="text"
+                                className='mt-1 text-gray-500 active:group:border-primary outline-none border-none'
+                                {...getFieldProps('first_name')}
+                            />
+                        </div>
+                        {
+                            touched.first_name && errors.first_name && <ValidationError text={errors.first_name} />
+                        }
                     </div>
-                    <div className="group border rounded-lg p-2 grid overflow-x-hidden">
-                        <label className='w-full' htmlFor="last_name">Last Name</label>
-                        <input id='last_name' type="text" className='mt-1 text-gray-600 active:group:border-primary outline-none border-none' />
+                    <div className="">
+                        <div className="group border rounded-lg p-2 grid overflow-x-hidden">
+                            <label className='w-full !font-fellixSemibold' htmlFor="last_name">Last Name</label>
+                            <input id='last_name' type="text" className='mt-1 text-gray-500 active:group:border-primary outline-none border-none'
+                                {...getFieldProps('last_name')}
+                            />
+                        </div>
+                        {
+                            touched.last_name && errors.last_name && <ValidationError text={errors.last_name} />
+                        }
                     </div>
-                    <div className="col-span-2 group border rounded-lg p-2 grid overflow-x-hidden">
-                        <label className='w-full' htmlFor="email">Email address</label>
-                        <input id='email' type="email" className='mt-1 text-gray-600 active:group:border-primary outline-none border-none' />
+                    <div className="">
+                        <div className="col-span-2 group border rounded-lg p-2 grid overflow-x-hidden">
+                            <label className='w-full !font-fellixSemibold' htmlFor="email">Email address</label>
+                            <input id='email' type="email" className='mt-1 text-gray-500 active:group:border-primary outline-none border-none'
+                                {...getFieldProps('email')}
+                            />
+                        </div>
+                        {
+                            touched.email && errors.email && <ValidationError text={errors.email} />
+                        }
                     </div>
-                    <div className="col-span-2 group border rounded-lg p-2 grid overflow-x-hidden">
-                        <label className='w-full' htmlFor="password">New Password</label>
-                        <input id='password' type="password" className='mt-1 text-gray-600 active:group:border-primary outline-none border-none' />
+                    <div className="">
+                        <div className="col-span-2 group border rounded-lg p-2 grid overflow-x-hidden">
+                            <label className='w-full !font-fellixSemibold' htmlFor="phone">Phone Number</label>
+                            <input id='phone' type="phone" className='mt-1 text-gray-500 active:group:border-primary outline-none border-none'
+                                {...getFieldProps('phone')}
+                            />
+                        </div>
+                        {
+                            touched.phone && errors.phone && <ValidationError text={errors.phone} />
+                        }
+                    </div>
+                    <div className="col-span-2">
+                        <div className=" group border rounded-lg p-2 grid overflow-x-hidden">
+                            <label className='w-full !font-fellixSemibold' htmlFor="password">New Password</label>
+                            <input id='password' type="password" className='mt-1 text-gray-500 active:group:border-primary outline-none border-none'
+                                {...getFieldProps('password')}
+                            />
+                        </div>
+                        {
+                            touched.password && errors.password && <ValidationError text={errors.password} />
+                        }
                     </div>
                     <div className="flex items-center gap-2 text-sm">
                         <input type="checkbox" className='accent-primary-red' id='agree' />
                         <label htmlFor='agree' className='whitespace-nowrap text-xs'>I agree to Roomeo <span className='text-primary-red'>Terms & Conditions</span>  and <span className='text-primary-red'>Privacy Policy</span> </label>
                     </div>
-                    <button onClick={() => setShowModal(true)} className='mt-5 col-span-2 block text-white text-base bg-primary-red px-5 py-3.5 rounded-xl'>
+                    <button type='submit'
+                        //  onClick={() => setShowModal(true)} 
+                        className='mt-5 col-span-2 block text-white text-base bg-primary-red px-5 py-3.5 rounded-xl'>
                         Create Free Account
                     </button>
-                </div>
+                </form>
                 <div className="mt-auto">
                     <p className="text-center mt-16 text-sm">Copyright © 2024 Roomeo</p>
                 </div>
@@ -86,6 +175,11 @@ const CreateAccount = () => {
                     </p>
                 </div>
             </div> : null}
+            {
+                loading ? <div className='z-50 fixed inset-0 bg-black/50 w-full h-screen grid place-content-center'>
+                    <ImSpinner2 className='text-white animate-spin' size={35} />
+                </div> : null
+            }
         </div>
     )
 }

@@ -32,7 +32,7 @@ const Header = () => {
                         Invest Now
                     </a>
 
-                    <button onClick={() => navigate('create-account')} className=' text-white bg-primary-red px-5 py-2.5 rounded-xl'>
+                    <button onClick={() => navigate('/create-account')} className=' text-white bg-primary-red px-5 py-2.5 rounded-xl'>
                         Create Free Account
                     </button>
                 </div>
